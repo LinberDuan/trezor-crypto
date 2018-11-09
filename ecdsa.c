@@ -660,7 +660,7 @@ int ecdh_multiply(const ecdsa_curve *curve, const uint8_t *priv_key, const uint8
 
 	return 0;
 }
-
+/*
 void init_rfc6979(const uint8_t *priv_key, const uint8_t *hash, rfc6979_state *state) {
 	uint8_t bx[2*32];
 	uint8_t buf[32 + 1 + 2*32];
@@ -710,6 +710,8 @@ void generate_k_rfc6979(bignum256 *k, rfc6979_state *state)
 	bn_read_be(buf, k);
 	memzero(buf, sizeof(buf));
 }
+
+*/
 
 // msg is a data to be signed
 // msg_len is the message length
